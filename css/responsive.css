@@ -27,6 +27,10 @@
     cursor: pointer;
   }
 
+  .menu-button-active {
+    position: fixed;
+  }
+
   .menu-button-active svg rect {
     fill: darkgrey;
   }
@@ -61,12 +65,12 @@
   .navbar .navbar-list {
     width: 0;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     flex-direction: column;
     text-align: right;
-    background: rgba(255,255,255,0.9);
+    background: white;
     transition: 0.5s;
     z-index: 98;
     padding: 4.75rem 1rem;
