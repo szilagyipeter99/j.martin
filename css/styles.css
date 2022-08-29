@@ -38,7 +38,6 @@ body {
   color: #f5ba45;
   border-radius: 24px;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 0.75px;
   box-shadow: 3px 7px 12px 1.5px #f5ba4533;
 }
@@ -77,6 +76,10 @@ button:active {
   margin: auto;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* //////////////////////////////////// */
 .background-circle {
   position: absolute;
@@ -103,15 +106,6 @@ button:active {
   top: 0;
   left: -620px;
   opacity: 0.05;
-}
-
-#bgCircle5 {
-  width: 100px;
-  bottom: -50px;
-  right: -50px;
-  opacity: 0.2;
-  z-index: 3;
-  filter: blur(100px);
 }
 
 /* //////////////////////////////////// */
