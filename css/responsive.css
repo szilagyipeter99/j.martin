@@ -3,6 +3,10 @@
     padding: 0;
   }
 
+  .background-circle {
+    display: none;
+  }
+
   .menu-button {
     display: block;
     position: absolute;
@@ -70,7 +74,7 @@
     right: 0;
     flex-direction: column;
     text-align: right;
-    background: white;
+    background: rgba(255,255,255,0.9);
     transition: 0.5s;
     z-index: 98;
     padding: 4.75rem 1rem;
