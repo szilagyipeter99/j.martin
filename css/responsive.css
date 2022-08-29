@@ -1,0 +1,222 @@
+@media only screen and (max-width: 768px) {
+  .container-main {
+    padding: 0;
+  }
+
+  .menu-button {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    top: 12px;
+    right: 12px;
+    text-align: left;
+  }
+
+  .menu-button svg {
+    overflow: visible;
+    margin: 1rem 0;
+  }
+
+  .menu-button svg rect {
+    fill: rgb(35,35,35);
+    transition: .4s;
+    rx: 2.5;
+  }
+
+  .menu-button:hover {
+    cursor: pointer;
+  }
+
+  .menu-button-active svg rect {
+    fill: darkgrey;
+  }
+
+  .menu-button-active svg rect:nth-child(1){
+    y: 12px;
+    transform-origin: 16px 13px;
+    transform: rotate(-45deg);
+  }
+
+  .menu-button-active svg rect:nth-child(2) {
+    transform-origin: 16px 13px;
+    transform: rotate(45deg);
+  }
+
+  .menu-button-active svg rect:nth-child(3) {
+    y: 12px;
+    transform-origin: 16px 13px;
+    transform: rotate(45deg);
+  }
+
+  .full-screen-section {
+    height: auto;
+    margin-bottom: 7rem;
+  }
+
+  .navbar .navbar-title {
+    margin-top: -0.5rem;
+    margin-left: 0.75rem;
+  }
+
+  .navbar .navbar-list {
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: right;
+    background: rgba(255,255,255,0.9);
+    transition: 0.5s;
+    z-index: 98;
+    padding: 4.75rem 1rem;
+    margin-right: -2rem;
+  }
+
+  .navbar .navbar-list.responsive-active {
+    width: 100%;
+    margin-right: 0;
+    padding: 4.75rem 1.25rem;
+  }
+
+
+  .navbar .navbar-list ul {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .navbar .navbar-list ul li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar .navbar-list ul li a {
+    font-size: 1.25rem;
+  }
+
+  .navbar .navbar-list ul li button {
+    margin-top: 0.5rem;
+  }
+
+  .intro-section {
+    position: relative;
+    top: auto;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    transform: none;
+  }
+
+  .intro-section .intro-texts {
+    text-align: left;
+    margin-top: 6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .intro-section .intro-texts h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-section .intro-texts p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .intro-section .intro-image {
+    width: 100%;
+  }
+
+  .services {
+    position: relative;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+
+  .services .services-texts h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .services .cards-wrap {
+    flex-direction: column;
+    margin-bottom: 0;
+    width: fit-content;
+  }
+
+  .services .services-card {
+    width: 300px;
+    margin-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+  .services .services-card p {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .references .references-text h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .references .references-gallery-wrap {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .references .references-gallery {
+    margin-left: 2.5rem;
+    margin-right: 1.25rem;
+  }
+
+  .references .gallery-bullets {
+    display: none;
+  }
+
+  .steps {
+    display: none;
+  }
+
+  .kapcsolat {
+    width: 92%;
+    padding: 3rem 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .kapcsolat h1 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .kapcsolat form {
+    text-align: center;
+  }
+
+  .kapcsolat form input {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .kapcsolat form input:first-of-type {
+    margin-right: 0;
+  }
+
+  .kapcsolat form textarea {
+    font-size: 0.95rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
