@@ -48,3 +48,8 @@ function showInModal(e) {
 function hideModal() {
   modal.style.display = 'none';
 }
+
+
+document.getElementById("kapcsolatBtn").onclick = function () {
+        location.href = "kapcsolat";
+    };

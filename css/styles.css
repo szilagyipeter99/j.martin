@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 * {
   padding: 0;
@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   background: #fbfcfa;
-  background: linear-gradient(90deg, #fbfcfa 0%, #e5e8ec 100%);
+  background: linear-gradient(90deg, #fbfcfa 0%, #ffffff 100%);
   position: relative;
   overflow-x: hidden;
 }
@@ -22,9 +22,10 @@ body {
   font-size: 1.05rem;
   padding: 0.65rem 1.5rem;
   background: #f5ba45;
+  background: linear-gradient(180deg, #f5ba45, #fca95d);
   color: white;
   border-radius: 24px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.5px;
   box-shadow: 3px 7px 12px 2px #f5ba4533;
 }
@@ -183,19 +184,24 @@ button:active {
 }
 
 .navbar .navbar-list ul li {
-  margin-right: 2.5rem;
+  margin-right: 3rem;
+}
+
+.navbar .navbar-list ul li span {
+  color: #fca95d;
 }
 
 .navbar .navbar-list ul li:last-child {
   margin-right: 0;
+  margin-left: 2rem;
 }
 
 .navbar .navbar-list ul li a {
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #646c77;
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .navbar .navbar-list ul li a:hover {
@@ -226,7 +232,7 @@ button:active {
 
 .intro-section .intro-texts h1 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 4.5rem;
   margin-bottom: 1.5rem;
   pointer-events: none;
@@ -234,6 +240,7 @@ button:active {
 
 .intro-section .intro-texts h1 span {
   background-color: #f5ba45;
+  font-weight: 700;
   background-image: linear-gradient(45deg, #f5ba45, #fcb370);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -245,7 +252,7 @@ button:active {
 .intro-section .intro-texts p {
   font-size: 1.1rem;
   font-weight: 400;
-  color: grey;
+  color: #797979;
   line-height: 1.5rem;
   margin-bottom: 2.5rem;
   pointer-events: none;
@@ -273,7 +280,7 @@ button:active {
 .services .services-texts h1 {
   font-size: 2.75rem;
   line-height: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 3.5rem;
   color: black;
   pointer-events: none;
@@ -356,9 +363,79 @@ button:active {
 }
 
 /* //////////////////////////////////// */
+
+.lepesek {
+
+}
+
+.lepesek .black-absolute-elements {
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  height: 500px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.lepesek .black-absolute-elements div {
+  width: 20px;
+  height: 400px;
+  background: black;
+  position: absolute;
+  border-radius: 30%;
+  top: 50px;
+  margin-left: -10px;
+  filter: blur(10px);
+  opacity: 0.1;
+}
+
+.lepesek .lepes-cards-wrap {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto;
+}
+
+.lepesek .lepes-cards-wrap .lepes-card {
+  width: 270px;
+  height: 500px;
+  padding: 10rem 2rem;
+}
+
+
+.lepesek .black-absolute-elements div:nth-child(1) {
+  left: 0;
+}
+
+.lepesek .black-absolute-elements div:nth-child(2) {
+  left: 270px;
+  clip: rect(-50px,50px,500px,10px);
+}
+
+.lepesek .black-absolute-elements div:nth-child(3) {
+  left: 540px;
+  clip: rect(-50px,50px,500px,10px);
+}
+
+.lepesek .black-absolute-elements div:nth-child(4) {
+  left: 810px;
+  clip: rect(-50px,50px,500px,10px);
+}
+
+.lepesek .black-absolute-elements div:nth-child(5) {
+  left: 1080px;
+  z-index: 11;
+}
+
+
+
+/* //////////////////////////////////// */
 .references {
   max-width: 1050px;
-  margin: 8rem auto 14rem;
+  margin: 8rem auto 11rem;
   position: relative;
 }
 
@@ -370,7 +447,7 @@ button:active {
 
 .references .references-text h1 {
   font-size: 2.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
@@ -454,117 +531,15 @@ button:active {
   background: #646c77;
 }
 
+
 /* //////////////////////////////////// */
-.steps {
-  position: relative;
-  margin-bottom: 14rem;
-}
-
-.steps .containers-wrap {
-  width: fit-content;
-  margin-left: auto;
-}
-
-.steps .step-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: fit-content;
-}
-
-.steps .step-container .step-circles svg {
-  width: 125px;
-  filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.1));
-}
-
-.steps .step-container .step-circles svg circle:nth-child(1) {
-  stroke: black;
-  stroke-width: 3;
-  stroke-dasharray: 0 20 30 50;
-  fill: none;
-}
-
-.steps .step-container .step-circles svg circle:nth-child(2) {
-  stroke: black;
-  stroke-width: 0.5;
-  fill: rgba(255,255,255,0.5);
-}
-
-.steps .step-container .step-circles svg circle:nth-child(3) {
-  stroke: #fecd57;
-  stroke-width: 2.5;
-  stroke-dasharray: 7 50 40;
-  fill: none;
-}
-
-.steps .step-container .step-circles svg text {
-  stroke: black;
-  stroke-width: 0.6;
-  fill: none;
-  font-size: 1.35rem;
-  font-weight: 600;
-  fill: rgba(255,255,255,0.5);
-}
-
-.steps .step-container .step-rectangle {
-  display: flex;
-  flex-direction: row;
-  background: #f5ba45;
-  background: linear-gradient(135deg, #fecd57 10%, #f5ba45 100%);
-  width: fit-content;
-  height: 70px;
-  border-radius: 16px;
-  position: relative;
-  z-index: -1;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.steps .step-container .step-rectangle p {
-  color: black;
-  text-align: left;
-  margin-left: 1.75rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 4.25rem;
-  letter-spacing: 1px;
-}
-
-.steps .step-container .step-rectangle img {
-  width: auto;
-  height: 36px;
-  margin: 1.1rem 1.5rem 0 1.4rem;
-}
-
-.steps .step-container:nth-of-type(1) {
-  margin-left: auto;
-  margin-right: 4.5rem;
-}
-
-.steps .step-container:nth-of-type(2) {
-  margin-left: auto;
-}
-
-.steps .step-container:nth-of-type(3) {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: 3rem;
-}
-
-.steps .step-container:nth-of-type(4) {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: 10rem;
-}
-
-
-
 
 .kapcsolat {
   position: relative;
   text-align: left;
   width: fit-content;
   margin: auto;
+  margin-top: 3rem;
   margin-bottom: 8rem;
   background: rgba(255,255,255,0.4);
   padding: 5rem 6rem 5rem;
@@ -578,7 +553,7 @@ button:active {
   text-align: left;
   line-height: 3.5rem;
   font-size: 2.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.75rem;
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.">
   <meta name="author" content="Szilágyi Péter">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <title>J. Martin - Grafikus</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -44,10 +44,10 @@
         </div>
         <div class="navbar-list">
           <ul>
-            <li><a href="#">Főoldal</a></li>
+            <li><a href="#"><span>Főoldal</span></a></li>
             <li><a href="rolam">Rólam</a></li>
-            <li><a href="szolgaltatasok">Szolgáltatások</a></li>
-            <li><button type="button" name="button" class="orange-button">Kapcsolat</button></li>
+            <li><a href="szolgaltatasok">Munkáim</a></li>
+            <li><button id="kapcsolatBtn" type="button" name="button" class="orange-button">Kapcsolat</button></li>
           </ul>
         </div>
       </div>
@@ -56,7 +56,7 @@
       <div class="intro-section">
         <div class="intro-texts">
           <h1>Helló! <br> <span>Martin vagyok.</span></h1>
-          <p>Grafikus vagyok, lassan 7 éve valósítom meg ügyfeleim elképzeléseit. <span>Ha felkeltettem az érdeklődésed, keress bátran, alkossunk valami nagyon jót!</span>  </p>
+          <p>Grafikus vagyok, lassan 7 éve valósítom meg ügyfeleim elképzeléseit. <span>Ha felkeltettem az érdeklődésed, keress bátran, alkossunk valami nagyon jót!</span> </p>
           <button type="button" name="button" class="orange-button">Keress fel!</button>
         </div>
         <div class="intro-image">
@@ -113,6 +113,35 @@
       </div>
       <button type="button" name="button" class="orange-inverse-button">Továbbiak</button>
       <!-- <button type="button" name="button" class="white-button">továbbiak</button> -->
+    </div>
+
+
+    <div class="lepesek">
+      <div class="black-absolute-elements">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="lepes-cards-wrap">
+        <div class="lepes-card">
+          <h1>KAPCSOLAT</h1>
+          <p>This is the description of this little card.</p>
+        </div>
+        <div class="lepes-card">
+          <h1>ÖTLETELÉS</h1>
+          <p>This is the description of this little card.</p>
+        </div>
+        <div class="lepes-card">
+          <h1>TERVEZÉS</h1>
+          <p>This is the description of this little card.</p>
+        </div>
+        <div class="lepes-card">
+          <h1>EREDMÉNY</h1>
+          <p>This is the description of this little card.</p>
+        </div>
+      </div>
     </div>
 
 
@@ -190,107 +219,19 @@
     </div>
 
 
-    <div class="steps">
+    <div class="kapcsolat" id="kapcsolat">
 
-
-
-      <div class="containers-wrap">
-
-        <div class="step-container">
-          <div class="step-circles">
-            <svg viewBox="0 0 40 40">
-              <circle cx="20" cy="20" r="14.5" />
-              <circle cx="20" cy="20" r="13" />
-              <circle cx="20" cy="20" r="13.8" />
-              <text x="16" y="28">1</text>
-            </svg>
-          </div>
-          <div class="step-rectangle">
-            <p>kapcsolat</p>
-            <img src="img/handshake.png" alt="">
-          </div>
-          <div class="step-text">
-            <p>Személyesen, online vagy telefonon keresztül felveszem veled a kapcsolatot,
-              és igyekszem minél jobban megismerni téged,
-              illetve az igényeidet, hogy a legjobbat tudjam nyújtani számodra. </p>
-          </div>
-        </div>
-
-        <div class="step-container">
-          <div class="step-circles">
-            <svg viewBox="0 0 40 40">
-              <circle cx="20" cy="20" r="14.5" />
-              <circle cx="20" cy="20" r="13" />
-              <circle cx="20" cy="20" r="13.8" />
-              <text x="14" y="28">2</text>
-            </svg>
-          </div>
-          <div class="step-rectangle">
-            <p>ötletelés</p>
-            <img src="img/bulb-icon.png" alt="">
-          </div>
-          <div class="step-text">
-            <p>Miután meghatároztuk a céljaidat és átbeszéltük az elképzeléseidet,
-              közösen megbeszéljük a tervezés menetét, illetve annak részleteit. </p>
-          </div>
-        </div>
-
-        <div class="step-container">
-          <div class="step-circles">
-            <svg viewBox="0 0 40 40">
-              <circle cx="20" cy="20" r="14.5" />
-              <circle cx="20" cy="20" r="13" />
-              <circle cx="20" cy="20" r="13.8" />
-              <text x="14" y="28">3</text>
-            </svg>
-          </div>
-          <div class="step-rectangle">
-            <p>tervezés</p>
-            <img src="img/rocket.png" alt="">
-          </div>
-          <div class="step-text">
-            <p>Itt öltenek "testet" az idáig csak fejben megjelent víziók, elképzelések,
-              amelyeket először egy vázlat segítségével prezentálok, majd szerkesztem
-              meg a legjobb verziót a tervező programban, ha szükséges módosítom is. </p>
-          </div>
-        </div>
-
-
-        <div class="step-container">
-          <div class="step-circles">
-            <svg viewBox="0 0 40 40">
-              <circle cx="20" cy="20" r="14.5" />
-              <circle cx="20" cy="20" r="13" />
-              <circle cx="20" cy="20" r="13.8" />
-              <text x="12" y="28">4</text>
-            </svg>
-          </div>
-          <div class="step-rectangle">
-            <p>eredmény</p>
-            <img src="img/hand-money.png" alt="">
-          </div>
-          <div class="step-text">
-            <p>A projekt lezárása előtt pedig, elvégezzük az utolsó simításokat.
-              Fontosnak tartom a fejlődést, ezért szeretném kiértékelni a közös munkát,
-              hogy legközelebb is hatékonyan tudjunk együtt működni. </p>
-          </div>
-        </div>
-
+      <div class="kapcsolat-form">
+        <h1>Lépjünk <br>
+          <span>kapcsolatba!</span>
+        </h1>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="text" name="name" placeholder="Név" required>
+          <input type="email" name="email" placeholder="Email cím" required>
+          <textarea name="message" rows="5" placeholder="Üzenet" required></textarea>
+          <button class="white-button" type="submit">üzenet küldése</button>
+        </form>
       </div>
-
-    </div>
-
-    <div class="kapcsolat">
-
-      <h1>Lépjünk <br>
-        <span>kapcsolatba!</span>
-      </h1>
-      <form action="https://formsubmit.co/your@email.com" method="POST">
-        <input type="text" name="name" placeholder="Név" required>
-        <input type="email" name="email" placeholder="Email cím" required>
-        <textarea name="message" rows="5" placeholder="Üzenet" required></textarea>
-        <button class="white-button" type="submit">üzenet küldése</button>
-      </form>
     </div>
 
 
